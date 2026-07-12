@@ -1,5 +1,13 @@
+import type { CSSProperties } from 'react'
 import { cvData } from './data/cv'
 import './App.css'
+
+const companyBrushColors: Record<string, string> = {
+  SAP: '#006BB8',
+  HeyJobs: '#D02879',
+  Plentific: '#0f8b6e',
+  Huawei: '#E10027',
+}
 
 function App() {
   const { profile, experience, education, skills, publications, links } = cvData
@@ -37,8 +45,14 @@ function App() {
             {experience.map((job) => (
               <article key={`${job.company}-${job.period}`} className="card">
                 <div className="card-header">
-                  <h3>
-                    {job.role} - {job.company}
+                  <h3 className="job-title">
+                    <span
+                      className="company-brush"
+                      style={{ '--company-color': companyBrushColors[job.company] } as CSSProperties}
+                    >
+                      {job.company}
+                    </span>
+                    <span className="role-text">{job.role}</span>
                   </h3>
                   <p className="subtle">{job.location}</p>
                 </div>
