@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&family=Rubik+Spray+Paint&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+:root {
+  --surface: #fffaf2;
+  --surface-900: #1a1f2f;
+  --surface-800: #2a3146;
+  --surface-700: #4a556f;
+  --surface-600: #73829b;
+  --accent-700: #0f4c5c;
+  --accent-600: #1f7a8c;
+  --accent-500: #62b6cb;
+  --chip-bg: rgba(255, 255, 255, 0.72);
+  --chip-border: rgba(26, 31, 47, 0.16);
+  --card-bg: rgba(255, 255, 255, 0.8);
+  --card-border: rgba(26, 31, 47, 0.12);
+  --heading-font: 'Quicksand', 'Segoe UI', sans-serif;
+  --display-font: 'Rubik Spray Paint', 'Segoe UI', sans-serif;
+  --body-font: 'Space Grotesk', 'Segoe UI', sans-serif;
+  font-family: var(--body-font);
+  line-height: 1.45;
+  font-weight: 400;
+  color: var(--surface-900);
+  background: radial-gradient(circle at top left, #fff2cc, #fffaf2 30%, #f6fbff 100%);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--heading-font);
+  color: var(--surface-900);
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
