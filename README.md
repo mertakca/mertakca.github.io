@@ -1,4 +1,4 @@
-# Mert Akca Portfolio
+# Mert Akça Portfolio
 
 Personal portfolio built with React, TypeScript, and Vite for GitHub Pages.
 
