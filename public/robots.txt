@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mertakca.github.io/sitemap.xml
