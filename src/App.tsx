@@ -57,11 +57,6 @@ function App() {
                   <p className="subtle">{job.location}</p>
                 </div>
                 <p className="period">{job.period}</p>
-                <ul>
-                  {job.highlights.map((highlight) => (
-                    <li key={highlight}>{highlight}</li>
-                  ))}
-                </ul>
               </article>
             ))}
           </div>
@@ -75,11 +70,6 @@ function App() {
             <p className="period">
               {education.location} - {education.period}
             </p>
-            <ul>
-              {education.highlights.map((highlight) => (
-                <li key={highlight}>{highlight}</li>
-              ))}
-            </ul>
           </article>
         </section>
 
