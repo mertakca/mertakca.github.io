@@ -39,6 +39,40 @@ function App() {
       </header>
 
       <main>
+        <section className="section reveal" id="publications">
+          <h2>Publications</h2>
+          <div className="cards">
+            {publications.map((publication) => (
+              <article key={publication.title} className="card publication">
+                <h3>{publication.title}</h3>
+                <p className="subtle">{publication.date}</p>
+                <p>{publication.summary}</p>
+                <a href={publication.href} target="_blank" rel="noreferrer">
+                  Read on Medium
+                </a>
+              </article>
+            ))}
+          </div>
+          <a
+            className="more-articles-link"
+            href="https://medium.com/@mertakca"
+            target="_blank"
+            rel="noreferrer"
+          >
+            See my other articles
+          </a>
+        </section>
+
+        <a href="https://mertsdesk.top/zehra" target="_blank" rel="noreferrer" className="mystery-banner">
+          <div className="mystery-banner-content">
+            <div className="mystery-banner-text">
+              <h2 className="mystery-title">Do you have a time for a game night?</h2>
+              <p className="mystery-subtitle">Play my game - Zehra is missing</p>
+              <p className="mystery-languages">Available in English, Turkish, Spanish</p>
+            </div>
+          </div>
+        </a>
+
         <section className="section reveal" id="experience">
           <h2>Work Experience</h2>
           <div className="cards">
@@ -83,30 +117,6 @@ function App() {
               </article>
             ))}
           </div>
-        </section>
-
-        <section className="section reveal" id="publications">
-          <h2>Publications</h2>
-          <div className="cards">
-            {publications.map((publication) => (
-              <article key={publication.title} className="card publication">
-                <h3>{publication.title}</h3>
-                <p className="subtle">{publication.date}</p>
-                <p>{publication.summary}</p>
-                <a href={publication.href} target="_blank" rel="noreferrer">
-                  Read on Medium
-                </a>
-              </article>
-            ))}
-          </div>
-          <a
-            className="more-articles-link"
-            href="https://medium.com/@mertakca"
-            target="_blank"
-            rel="noreferrer"
-          >
-            See my other articles
-          </a>
         </section>
       </main>
 
