@@ -1,10 +1,8 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
 import './index.css'
-import App from './App.tsx'
+import './App.css'
 
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
+const yearNode = document.getElementById('current-year')
+
+if (yearNode) {
+  yearNode.textContent = String(new Date().getFullYear())
+}
